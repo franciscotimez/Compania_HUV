@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links Css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Links Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Habia Una Vez - Contacto</title>
+</head>
+<body>
+    <div class="container__logo">
+        <div class="container__logo--background">
+            <img src="../img/HabiaUnaVez_logo.png" alt="Logo, Compañia Artistica Habia Una Vez" />
+        </div>
+    </div>
+    <header>
+        <nav class="header__nav">
+            <div class="header__nav--title">
+                <h2>Habia Una Vez</h2>
+            </div>
+            <ul>                
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/producciones.html">Producciones</a></li>
+                <li><a href="../pages/galeria.html">Galeria</a></li>
+                <li><a href="../pages/prensa.html">Prensa</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <a href="https://www.instagram.com/_habiaunavezok/" target="_blank"><img src="../img/insta_icon.png" alt="ir a Instagram"></a>
+        </nav>
+        <div class="header__title">
+            <div class="header__title--subtitle">
+                <h3>Compañia Artistica</h3>
+            </div>
+            <h1>Contacto</h1>
+        </div>
+    </header>
+    <main class="main__contacto">
+        <div class="form__cotainer">
+            <form action="">
+                <fieldset>
+                    <legend>Escribinos!!!</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Juan Gabriel">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Perez">
+                    </div>
+                    <div>
+                        <label for="mail">e-mail</label>
+                        <input type="email" name="mail" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div>
+                        <label for="pais">
+                            Pais
+                        </label>
+                        <select name="pais" id="">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <label>Genero (que te gustaria interpretar en escenario)</label>
+                    <div class="form__radio">
+                        <label for="contactChoice3">Masculino</label>
+                        <input type="radio" name="genero" id="" value="Masculino">
+                        <label for="contactChoice3">Femenino</label>
+                        <input type="radio" name="genero" id="" value="Femenino">
+                        <label for="contactChoice3">Sin preferencia</label>
+                        <input type="radio" name="genero" id="" value="Sin preferencia">
+                        <label for="contactChoice3">Otro (aclarar en el mensaje)</label>
+                        <input type="radio" name="genero" id="" value="Otro">
+
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje (max: 200 caracteres)</label>
+                        <textarea name="mensaje" maxlength="200" rows="6" cols="40" placeholder="Escribi tu mensaje aqui..."></textarea>
+                    </div>
+                    <div>
+                        <input class="btn__reset" type="reset" value="Borrar Formulario">
+                        <input class="btn__submit" type="submit" value="Enviar Formulario">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
