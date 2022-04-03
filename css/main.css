@@ -157,19 +157,27 @@ section {
     color: #191919;
 }
 
+/* ARTICLE */
+h5 {
+    width: 100%;
+    font-family: fontTitle;
+    font-size: 2.3rem;
+    padding: 0.5rem 0rem 0rem 1.5rem;
+}
 .articleObra {
     display: flex;
     flex-wrap: wrap;
 }
-.articleObra h5 {
+.articleObra h6 {
+    display: inline-block;
     width: 100%;
     font-family: fontTitle;
     font-size: 2.3rem;
     padding: 0.5rem 0rem 0rem 1.5rem;
 }
 
-.articleImg img,
-.articleLogo img {
+.articleImg,
+.articleLogo {
     display: inline-block;
     border-radius: 8px;
     width: 40%;
@@ -183,27 +191,24 @@ section {
     object-fit: contain;
 }
 
-.articleObra div p {
+.articleObra p {
     display: inline-block;
     width: 60%;
     text-align: justify;
     padding: 3px;
 }
-.articleObra div div p {
+.articleObra div {
+    display: inline-block;
+    width: 60%;
+    justify-content: space-around;
+}
+.articleObra  div p {
+    display: inline-block;
     text-align: justify;
     width: 100%;
 }
-.articleObra div {
-    display: inline-block;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.articleImg div {
-    display: inline-block;
-    width: 60%;
-}
-button {
+
+.articleObra button {
     background-color: #45B39D;
     display: inline-block;
     border: none;
@@ -211,8 +216,9 @@ button {
     font-family: 'Fredoka', sans-serif;
     font-size: 1.2rem;
     height: 3rem;
-    margin: 4px 0;
-    width: 47%;
+    margin: 1%;
+    width: 48%;
+    /* order: 1; */
 }
 /* Footer */
 footer {
@@ -253,6 +259,42 @@ footer {
 
     .presentation div {
         width: 60%;
+        padding: 0.5rem;
+    }
+    /* ARTICLE */
+    .articleObra {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-around;
+        height: 60vw;
+    }
+    .orden1 { order: 1; }
+    .orden2 { order: 2; }
+    .orden3 { order: 3; }
+    .orden4 { order: 4; }
+    .orden5 { order: 5; }
+
+    .articleImg,
+    .articleLogo {
+        height: 46%;
+        width: 50%;
+        margin: 1%;
+        border-radius: 15px;
+    }
+    
+    .articleLogo {
+        object-fit: contain;
+    }
+    
+    .articleObra p,
+    .articleObra div {
+        width: 45%;
+        height: 29%;
+    }
+
+    .articleObra button {
+        width: 45%;
     }
 
 }
