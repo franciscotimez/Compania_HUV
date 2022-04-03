@@ -250,6 +250,7 @@ footer {
 
     .presentation h4 {
         text-align: right;
+        font-size: 2.3rem;
     }
     
     .presentation iframe {
@@ -302,7 +303,7 @@ footer {
 @media screen and (min-width: 1023px) {
     .logoPosition {
         position: relative;
-        left: 3rem;
+        left: 7vw;
         top: -1rem;
         height: 0;
         width: 0;
@@ -316,25 +317,37 @@ footer {
         width: 8rem;
         display: flex;
     }
+
     header {
         height: 7.3rem;
     }
     .titleContainer h2 {
-        padding-left: 12rem;
-        font-size: 2.6rem;
+        padding-left: 20vw;
+        font-size: 2.3rem;
+    }
+    .containerRight {
+        margin-right: 7vw;
     }
     .subTitle h1 {
+        margin-right: 7vw;
         font-size: 2rem;
     }
     .subTitle h3 {
         font-size: 1.8rem;
-        padding-left: 12.3rem;
+        padding-left: 20vw;
     }
     .navBar li{
         font-size: 1.3rem;
     }
 
+    main {
+        width: 86vw;
+        margin-left: 7vw;
+    }
     /* PRESENTATION */
+    .presentation h4 {
+        font-size: 3rem;
+    }
     .presentation iframe {
         width: 50%;
         height: 30vw;
@@ -345,7 +358,7 @@ footer {
     
     /* ARTICLE */
     .articleObra {
-        height: 25vw;
+        height: 23vw;
         justify-content: space-between;
 
     }
@@ -364,7 +377,6 @@ footer {
     .articleObra div {
         width: 22%;
         height: 70%;
-        padding: 4% 0px;
     }
     .articleObra button {
         width: 22%;
