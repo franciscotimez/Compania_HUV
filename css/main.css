@@ -269,11 +269,11 @@ footer {
         justify-content: space-around;
         height: 60vw;
     }
-    .orden1 { order: 1; }
-    .orden2 { order: 2; }
-    .orden3 { order: 3; }
-    .orden4 { order: 4; }
-    .orden5 { order: 5; }
+    .ordenA { order: 2; }
+    .ordenB { order: 1; }
+    .ordenC { order: 4; }
+    .ordenD { order: 3; }
+    .ordenE { order: 5; }
 
     .articleImg,
     .articleLogo {
@@ -299,6 +299,74 @@ footer {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
+    .logoPosition {
+        position: relative;
+        left: 3rem;
+        top: -1rem;
+        height: 0;
+        width: 0;
+    }
+    .logoContainer {
+        background-color: white;
+        border-radius: 2rem;
+        height: 9rem;
+        padding: 22px 18px;
+        text-align: center;
+        width: 8rem;
+        display: flex;
+    }
+    header {
+        height: 7.3rem;
+    }
+    .titleContainer h2 {
+        padding-left: 12rem;
+        font-size: 2.6rem;
+    }
+    .subTitle h1 {
+        font-size: 2rem;
+    }
+    .subTitle h3 {
+        font-size: 1.8rem;
+        padding-left: 12.3rem;
+    }
+    .navBar li{
+        font-size: 1.3rem;
+    }
+
+    /* PRESENTATION */
+    .presentation iframe {
+        width: 50%;
+        height: 30vw;
+    }
+    .presentation div {
+        width: 50%;
+    }
     
+    /* ARTICLE */
+    .articleObra {
+        height: 25vw;
+        justify-content: space-between;
+
+    }
+    .articleImg,
+    .articleLogo {
+        height: 100%;
+        width: 24%;
+    }
+    .ordenA { order: 1; }
+    .ordenB { order: 3; }
+    .ordenC { order: 4; }
+    .ordenD { order: 2; }
+    .ordenE { order: 5; }
+
+    .articleObra p,
+    .articleObra div {
+        width: 22%;
+        height: 70%;
+        padding: 4% 0px;
+    }
+    .articleObra button {
+        width: 22%;
+    }
 }
