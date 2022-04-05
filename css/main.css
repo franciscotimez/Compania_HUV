@@ -287,6 +287,27 @@ footer {
     margin-bottom: 20px;
 }
 
+/* galeria.html */
+.galeria {
+    text-align: center;
+    font-family: fontTitle;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.galeriaFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.galeriaFotos img {
+    width: 49vw;
+    height: 34vw;
+    object-fit: contain;
+}
+
 @media screen and (min-width: 768px) {
     .burgerMenu {
         display: none;
@@ -380,6 +401,13 @@ footer {
     }
     .produccion button {
         width: 20vw;
+    }
+
+    /* galeria.html */
+    .galeriaFotos img {
+        width: 32vw;
+        height: auto;
+        margin-bottom: 1vw;
     }
 }
 
@@ -484,4 +512,10 @@ footer {
         margin-bottom: 20px;
     }
 
+    /* galeria.html */
+    .galeriaFotos img {
+        width: 24%;
+        margin-bottom: 1%;
+        height: auto;
+    }
 }
