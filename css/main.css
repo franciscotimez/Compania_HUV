@@ -308,6 +308,11 @@ footer {
     object-fit: contain;
 }
 
+/* Prensa.html */
+.prensa {
+    text-align: left;
+}
+
 @media screen and (min-width: 768px) {
     .burgerMenu {
         display: none;
