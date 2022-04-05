@@ -209,6 +209,12 @@ h5 {
 }
 
 .articleObra button {
+    margin: 1%;
+    width: 48%;
+    /* order: 1; */
+}
+
+button {
     background-color: #45B39D;
     display: inline-block;
     border: none;
@@ -216,9 +222,6 @@ h5 {
     font-family: 'Fredoka', sans-serif;
     font-size: 1.2rem;
     height: 3rem;
-    margin: 1%;
-    width: 48%;
-    /* order: 1; */
 }
 /* Footer */
 footer {
@@ -230,6 +233,58 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-around;
+}
+
+/* producciones.html */
+.produccion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produccion p {
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.produccionHead {
+    font-family: fontTitle;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.produccionTag {
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+
+.produccionTag p {
+    font-size: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 3px 10px;
+}
+
+.produccionImg {
+    text-align: center;
+}
+
+.produccionImg img {
+    width: 98vw;
+    height: 66vw;
+    object-fit: contain;
+}
+
+.produccionImg p {
+    text-align: center;
+}
+
+.produccion button {
+    align-self: flex-end;
+    margin-right: 5vw;
+    width: 35vw;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -298,6 +353,34 @@ footer {
         width: 45%;
     }
 
+    /* producciones.html */
+    .produccion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .produccion p {
+        width: 70vw;
+        padding: 1rem;
+    }
+
+    .produccionImg {
+        align-self: flex-start;
+        order: -1;
+        width: 30vw;
+    }
+
+    .produccionImg img {
+        width: 100%;
+        height: 21vw;
+    }
+    .produccionImg p{
+        width: 100%;
+    }
+    .produccion button {
+        width: 20vw;
+    }
 }
 
 @media screen and (min-width: 1023px) {
@@ -341,8 +424,8 @@ footer {
     }
 
     main {
-        width: 86vw;
-        margin-left: 7vw;
+        width: 80vw;
+        margin-left: 10vw;
     }
     /* PRESENTATION */
     .presentation h4 {
@@ -381,4 +464,24 @@ footer {
     .articleObra button {
         width: 22%;
     }
+
+    /* producciones.html */
+    .produccionHead,
+    .produccionTag {
+        text-align: left;
+    }
+    .produccion p {
+        width: 100%;
+    }
+    .produccionImg {
+        width: 30%;
+    }
+    .produccionP {
+        width: 70%;
+    }
+    .produccion button {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
 }
