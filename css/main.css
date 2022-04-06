@@ -354,6 +354,36 @@ footer {
     width: 30vw;
 }
 
+/* nosotros.html */
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.nosotros img {
+    width: 30vw;
+    object-fit: contain;
+}
+.nosotros div {
+    width: 70vw;
+}
+.nosotros h4 {
+    font-size: 0.7rem;
+}
+.nosotros h5 {
+    padding: 20px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+.nosotros p {
+    text-align: justify;
+    padding: 10px;
+}
+.rigthAling {
+    text-align: right;
+}
 @media screen and (min-width: 768px) {
     .burgerMenu {
         display: none;
@@ -482,6 +512,28 @@ footer {
         margin-right: 20px;
         width: 20vw;
     }
+
+    /* nosotros.html */
+    .nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .nosotros img {
+        width: 20vw;
+        object-fit: contain;
+    }
+
+    .nosotros div {
+        width: 45vw;
+    }
+
+    .nosotros p {
+        width: 65vw;
+    }
+
 }
 
 @media screen and (min-width: 1023px) {
