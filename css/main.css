@@ -377,13 +377,112 @@ footer {
     font-weight: 500;
     font-style: italic;
 }
+
 .nosotros p {
     text-align: justify;
     padding: 10px;
 }
+
 .rigthAling {
     text-align: right;
 }
+
+/* Estilos contacto.html */
+form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+form fieldset legend { 
+    font-family: fontTitle;
+    font-size: 2.5rem;
+    padding-left: 3rem;
+}
+
+form label {
+    padding: 0.5rem;
+    text-align: left;
+    width: 80%;
+}
+
+form input {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    display: block;
+    font-size: 1.1rem;
+    height: 1rem;
+    /* margin: 0px 0px 0px 0rem; */
+    padding: 15px;
+    width: 80%;
+    /* background-color: green; */
+}
+
+form select {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    height: auto;
+    padding: 3px 3px 3px 15px;
+    width: 80%;
+}
+
+.formRadio {
+    width: 80%;
+    font-size: 1.1rem;
+}
+.formRadio label {
+    display: inline-block;
+    height: auto;
+    width: 93%
+}
+.formRadio input {
+    display: inline-block;
+    height: 1rem;
+    width: 5%;
+}
+
+form textarea {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 20px;
+    width: 80%;
+}
+
+fieldset div {
+    width: 80%;
+}
+
+.btn__reset {
+    background-color: #b3455b;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    height: 50px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 31%;
+}
+
+.btn__submit {
+    background-color: #45B39D;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    height: 50px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 67%;
+}
+
 @media screen and (min-width: 768px) {
     .burgerMenu {
         display: none;
@@ -534,6 +633,11 @@ footer {
         width: 65vw;
     }
 
+    /* Estilos contacto.html */
+    form fieldset {
+        width: 70vw;
+        margin-left: 15vw;
+    }
 }
 
 @media screen and (min-width: 1023px) {
@@ -667,5 +771,10 @@ footer {
     .prensaBody button {
         margin-right: 20px;
         width: 25%;
+    }
+    /* Estilos contacto.html */
+    form fieldset {
+        width: 70%;
+        margin-left: 15%;
     }
 }
