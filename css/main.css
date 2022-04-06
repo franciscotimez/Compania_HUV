@@ -309,8 +309,49 @@ footer {
 }
 
 /* Prensa.html */
+.fecha {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    font-weight: 800;
+    text-align: center;
+}
 .prensa {
     text-align: left;
+}
+
+.prensa h2 {
+    padding: 0 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prensaText {
+    width: 60vw;
+}
+
+.prensaImg {
+    width: 40vw;
+    text-align: center;
+}
+
+.prensaImg p {
+    font-size: 0.7rem;
+}
+
+.prensaBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.prensaBody p {
+    text-align: justify;
+    padding: 5px;
+}
+.prensaBody button {
+    margin-right: 20px;
+    width: 30vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -413,6 +454,33 @@ footer {
         width: 32vw;
         height: auto;
         margin-bottom: 1vw;
+    }
+
+    /* prensa.html */
+    .prensa {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .prensaBody {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .prensaText {
+        width: 80%;
+    }
+    .prensaImg {
+        width: 20%;
+        text-align: center;
+    }
+    .prensaImg p {
+        display: none;
+    }
+
+    .prensaBody button {
+        margin-right: 20px;
+        width: 20vw;
     }
 }
 
@@ -522,5 +590,30 @@ footer {
         width: 24%;
         margin-bottom: 1%;
         height: auto;
+    }
+
+    /* prensa.html */
+    .prensa {
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .prensaTag {
+        padding-left: 10%;
+    }
+
+    .fecha {
+        margin-right: 10%;
+        text-align: right;
+    }
+
+    .prensaBody {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .prensaBody button {
+        margin-right: 20px;
+        width: 25%;
     }
 }
