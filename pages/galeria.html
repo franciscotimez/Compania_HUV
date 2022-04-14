@@ -15,74 +15,134 @@
     <title>Habia Una Vez - Galeria</title>
 </head>
 <body>
-    <div class="layout">
-        <header>
-            <div class="logoPosition">
-                <div class="logoContainer animate__animated animate__pulse">
-                    <img src="../img/HabiaUnaVez_logo.png" alt="Logo, Compañia Artistica Habia Una Vez" />
-                </div>
-            </div>
-            <nav>
-                <div class="titleContainer animate__animated animate__fadeInDown">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/HabiaUnaVez_logo.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                </a>
+                <div>
                     <h2>Habia Una Vez</h2>
+                    <h3>Compañia Artistica</h3>
                 </div>
-                <div class="containerRight">
-                    <ul class="navBar animate__animated animate__fadeIn">                
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/producciones.html">Producciones</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="../pages/prensa.html">Prensa</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                    <div class="socialContainer animate__animated animate__fadeIn">
-                        <a href="https://www.instagram.com/_habiaunavezok/" target="_blank"><img src="../img/insta_icon.png" alt="ir a Instagram"></a>
+                <div class="d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/producciones.html">Producciones</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Galeria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/prensa.html">Prensa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
                     </div>
-                    <div class="burgerMenu">
-                        <a href="#"><img src="../img/icons8-menú-redondeado-48.png" alt="burger menu"></a>
+                    <div class="navbar-brand">
+                        <a class="nav-link" href="https://www.instagram.com/_habiaunavezok/" target="_blank">
+                            <img src="../img/insta_icon.png" alt="ir a Instagram" width="30" height="30" >
+                        </a>
                     </div>
                 </div>
-            </nav>
-            <div class="subTitle">
-                <h3 class="animate__animated animate__fadeInUp">Compañia Artistica</h3>
-                <h1 class="animate__animated animate__backInLeft">Galeria</h1>
             </div>
-        </header>
-        <main>
-            <article>
-                <h4 class="galeria">Alicia y el enigma del tiempo</h4>
-                <div class="galeriaFotos">
-                    <img src="../img/alicia_01.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_02.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_03.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_04.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_05.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_06.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_07.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_08.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_09.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_10.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_11.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/alicia_12.jpeg" alt="imagenes de Alicia y el enigma del tiempo">
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <article>
+            <h4>Alicia y el enigma del tiempo</h4>
+            <div id="aliciaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../img/alicia_01.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/alicia_02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/alicia_03.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="../img/alicia_04.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/alicia_05.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/alicia_06.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="../img/alicia_07.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/alicia_08.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/alicia_09.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="../img/alicia_10.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/alicia_11.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/alicia_12.jpeg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-            </article>
-            <article>
-                <h4 class="galeria">Gira Pepe Cibrián Campoy</h4>
-                <div class="galeriaFotos">
-                    <img src="../img/pepe_01.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_02.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_03.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_04.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_05.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_06.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_07.jpg" alt="imagenes de Alicia y el enigma del tiempo">
-                    <img src="../img/pepe_08.jpg" alt="imagenes de Alicia y el enigma del tiempo">
+                <button class="carousel-control-prev" type="button" data-bs-target="#aliciaCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aliciaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </article>
+        <article>
+            <h4>Gira Pepe Cibrián Campoy</h4>
+            <div id="pepeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../img/pepe_01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/pepe_02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/pepe_03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="../img/pepe_04.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/pepe_05.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/pepe_06.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="../img/pepe_07.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../img/pepe_08.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-            </article>
-        </main>
-        <footer>
-            <p>Todos los derechos reservados.</p>
-        </footer>
-    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pepeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pepeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
 </html>
