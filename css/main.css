@@ -68,12 +68,28 @@ header nav {
     align-self: flex-end;
 }
 
-.navBar {
-    display: none;
-}
-
 header nav img {
     height: 2rem;
+}
+
+.navBar {
+    width: 100vw;
+    color: #191919;
+    list-style: none;
+}
+
+.navBarMenu {
+    justify-content: flex-end;
+    z-index: 1;
+}
+.navBarMenu ul {
+    background-color: #45B39D;
+}
+
+.navBar a {
+    color: #191919;
+    text-decoration: none;
+    font-weight: 900;
 }
 
 .subTitle {
@@ -100,6 +116,7 @@ header nav img {
     top: -1rem;
     height: 0;
     width: 0;
+    z-index: 2;
 }
 
 .logoContainer {
@@ -484,10 +501,7 @@ fieldset div {
 }
 
 @media screen and (min-width: 768px) {
-    .burgerMenu {
-        display: none;
-    }
-    .navBar {
+    /* .navBar {
         color: #191919;
         display: flex;
         list-style: none;
@@ -497,7 +511,7 @@ fieldset div {
         display: inline-block;
         padding: 20px 5px;
         font-weight: 900;
-    }
+    } */
 
     .presentation h4 {
         text-align: right;
@@ -640,7 +654,7 @@ fieldset div {
     }
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1207px) {
     .logoPosition {
         position: relative;
         left: 7vw;
@@ -668,6 +682,7 @@ fieldset div {
     .containerRight {
         margin-right: 7vw;
     }
+    
     .subTitle h1 {
         margin-right: 7vw;
         font-size: 2rem;
@@ -676,9 +691,9 @@ fieldset div {
         font-size: 1.8rem;
         padding-left: 20vw;
     }
-    .navBar li{
+    /* .navBar li{
         font-size: 1.3rem;
-    }
+    } */
 
     main {
         width: 80vw;
@@ -776,5 +791,14 @@ fieldset div {
     form fieldset {
         width: 70%;
         margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .socialContainer {
+        margin-left: 20vw;
+    }
+    .navBarMenu {
+        justify-content: flex-end;
     }
 }
