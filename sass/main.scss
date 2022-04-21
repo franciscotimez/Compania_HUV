@@ -1,0 +1,821 @@
+// Import files
+// Tipografias
+@import 'base/typo';
+// Layouts
+@import 'layout/grid',
+        'layout/header';
+// variables
+@import 'utilities/variables',
+        'utilities/mixins';
+// vistas
+@import 'views/index',
+        'views/contacto',
+        'views/galeria',
+        'views/nosotros',
+        'views/prensa',
+        'views/producciones';
+        
+/* Reset style Browser */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: 100px;
+}
+
+@font-face {
+    font-family: fontTitle;
+    src: url(../fonts/EnchantedLand.otf);
+}
+
+body {
+    color: #191919;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobile First */
+.layout {
+    display: grid;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 5.7rem;
+    margin-bottom: 1.3rem;
+    grid-area: header;
+}
+
+header nav {
+    background-color: #45B39D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.containerRight {
+    display: flex;
+}
+
+.socialContainer,
+.burgerMenu {
+    padding: 0.5rem;
+    align-self: center;
+}
+
+.titleContainer h2 {
+    font-family: fontTitle;
+    font-size: 2rem;
+    padding-left: 7.5rem;
+    align-self: flex-end;
+}
+
+header nav img {
+    height: 2rem;
+}
+
+.navBar {
+    width: 100vw;
+    color: #191919;
+    list-style: none;
+}
+
+.navBarMenu {
+    justify-content: flex-end;
+    z-index: 1;
+}
+.navBarMenu ul {
+    background-color: #45B39D;
+}
+
+.navBar a {
+    color: #191919;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    height: 50%;
+}
+
+.subTitle h3 {
+    font-family: fontTitle;
+    font-size: 1.3rem;
+    padding-left: 7.8rem;
+}
+
+.subTitle h1 {
+    font-size: 1.5rem;
+    align-self: center;
+    padding-right: 0.5rem;
+}
+.logoPosition {
+    position: relative;
+    left: -1.2rem;
+    top: -1rem;
+    height: 0;
+    width: 0;
+    z-index: 2;
+}
+
+.logoContainer {
+    background-color: white;
+    border-radius: 0rem 0rem 4rem 0rem;
+    height: 8rem;
+    padding: 24px 20px;
+    text-align: center;
+    width: 8rem;
+}
+.logoContainer img {
+    height: auto;
+    margin: auto;
+    width: 100%;
+}
+/* Main */
+main {
+    grid-area: main;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    margin-top: 2px; 
+}
+.presentation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 7px;
+    justify-content: center;
+}
+
+.presentation h4 {
+    font-size: 1.75rem;
+    width: 90%;
+    text-align: center;
+    font-style: italic;
+    color: #191919;
+    font-family: fontTitle;
+}
+
+.presentation iframe {
+    width: 100%;
+    height: 13rem;
+}
+
+.presentation div p {
+    text-align: justify;
+    margin: 0.5rem 0;
+    padding: 0 0.3rem;
+    color: #191919;
+}
+
+/* ARTICLE */
+h5 {
+    width: 100%;
+    font-family: fontTitle;
+    font-size: 2.3rem;
+    padding: 0.5rem 0rem 0rem 1.5rem;
+}
+.articleObra {
+    display: flex;
+    flex-wrap: wrap;
+}
+.articleObra h6 {
+    display: inline-block;
+    width: 100%;
+    font-family: fontTitle;
+    font-size: 2.3rem;
+    padding: 0.5rem 0rem 0rem 1.5rem;
+}
+
+.articleImg,
+.articleLogo {
+    display: inline-block;
+    border-radius: 8px;
+    width: 40%;
+    padding: 3px;
+    height: 100%;
+    align-self: center;
+    object-fit: cover;
+}
+
+.articleLogo img {
+    object-fit: contain;
+}
+
+.articleObra p {
+    display: inline-block;
+    width: 60%;
+    text-align: justify;
+    padding: 3px;
+}
+.articleObra div {
+    display: inline-block;
+    width: 60%;
+    justify-content: space-around;
+}
+.articleObra  div p {
+    display: inline-block;
+    text-align: justify;
+    width: 100%;
+}
+
+.articleObra button {
+    margin: 1%;
+    width: 48%;
+    /* order: 1; */
+}
+
+button {
+    background-color: #45B39D;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    height: 3rem;
+}
+/* Footer */
+footer {
+    background-color: #45B39D;
+    grid-area: footer;
+    height: 5rem;
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+}
+
+/* producciones.html */
+.produccion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produccion p {
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.produccionHead {
+    font-family: fontTitle;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.produccionTag {
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+
+.produccionTag p {
+    font-size: 0.8rem;
+    background-color: lightgrey;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 3px 10px;
+}
+
+.produccionImg {
+    text-align: center;
+}
+
+.produccionImg img {
+    width: 98vw;
+    height: 66vw;
+    object-fit: contain;
+}
+
+.produccionImg p {
+    text-align: center;
+}
+
+.produccion button {
+    align-self: flex-end;
+    margin-right: 5vw;
+    width: 35vw;
+    margin-bottom: 20px;
+}
+
+/* galeria.html */
+.galeria {
+    text-align: center;
+    font-family: fontTitle;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.galeriaFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.galeriaFotos img {
+    width: 49vw;
+    height: 34vw;
+    object-fit: contain;
+}
+
+/* Prensa.html */
+.fecha {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    font-weight: 800;
+    text-align: center;
+}
+.prensa {
+    text-align: left;
+}
+
+.prensa h2 {
+    padding: 0 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prensaText {
+    width: 60vw;
+}
+
+.prensaImg {
+    width: 40vw;
+    text-align: center;
+}
+
+.prensaImg p {
+    font-size: 0.7rem;
+}
+
+.prensaBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.prensaBody p {
+    text-align: justify;
+    padding: 5px;
+}
+.prensaBody button {
+    margin-right: 20px;
+    width: 30vw;
+}
+
+/* nosotros.html */
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.nosotros img {
+    width: 30vw;
+    object-fit: contain;
+}
+.nosotros div {
+    width: 70vw;
+}
+.nosotros h4 {
+    font-size: 0.7rem;
+}
+.nosotros h5 {
+    padding: 20px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.nosotros p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.rigthAling {
+    text-align: right;
+}
+
+/* Estilos contacto.html */
+form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+form fieldset legend { 
+    font-family: fontTitle;
+    font-size: 2.5rem;
+    padding-left: 3rem;
+}
+
+form label {
+    padding: 0.5rem;
+    text-align: left;
+    width: 80%;
+}
+
+form input {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    display: block;
+    font-size: 1.1rem;
+    height: 1rem;
+    /* margin: 0px 0px 0px 0rem; */
+    padding: 15px;
+    width: 80%;
+    /* background-color: green; */
+}
+
+form select {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    height: auto;
+    padding: 3px 3px 3px 15px;
+    width: 80%;
+}
+
+.formRadio {
+    width: 80%;
+    font-size: 1.1rem;
+}
+.formRadio label {
+    display: inline-block;
+    height: auto;
+    width: 93%
+}
+.formRadio input {
+    display: inline-block;
+    height: 1rem;
+    width: 5%;
+}
+
+form textarea {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 20px;
+    width: 80%;
+}
+
+fieldset div {
+    width: 80%;
+}
+
+.btn__reset {
+    background-color: #b3455b;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    height: 50px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 31%;
+}
+
+.btn__submit {
+    background-color: #45B39D;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    height: 50px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 67%;
+}
+
+@media screen and (min-width: 768px) {
+    /* .navBar {
+        color: #191919;
+        display: flex;
+        list-style: none;
+        align-self: center;
+    }
+    .navBar li{
+        display: inline-block;
+        padding: 20px 5px;
+        font-weight: 900;
+    } */
+
+    .presentation h4 {
+        text-align: right;
+        font-size: 2.3rem;
+    }
+    
+    .presentation iframe {
+        width: 40%;
+        align-self: center;
+    }
+
+    .presentation div {
+        width: 60%;
+        padding: 0.5rem;
+    }
+    /* ARTICLE */
+    .articleObra {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-around;
+        height: 60vw;
+    }
+    .ordenA { order: 2; }
+    .ordenB { order: 1; }
+    .ordenC { order: 4; }
+    .ordenD { order: 3; }
+    .ordenE { order: 5; }
+
+    .articleImg,
+    .articleLogo {
+        height: 46%;
+        width: 50%;
+        margin: 1%;
+        border-radius: 15px;
+    }
+    
+    .articleLogo {
+        object-fit: contain;
+    }
+    
+    .articleObra p,
+    .articleObra div {
+        width: 45%;
+        height: 29%;
+    }
+
+    .articleObra button {
+        width: 45%;
+    }
+
+    /* producciones.html */
+    .produccion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .produccion p {
+        width: 70vw;
+        padding: 1rem;
+    }
+
+    .produccionImg {
+        align-self: flex-start;
+        order: -1;
+        width: 30vw;
+    }
+
+    .produccionImg img {
+        width: 100%;
+        height: 21vw;
+    }
+    .produccionImg p{
+        width: 100%;
+    }
+    .produccion button {
+        width: 20vw;
+    }
+
+    /* galeria.html */
+    .galeriaFotos img {
+        width: 32vw;
+        height: auto;
+        margin-bottom: 1vw;
+    }
+
+    /* prensa.html */
+    .prensa {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .prensaBody {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .prensaText {
+        width: 80%;
+    }
+    .prensaImg {
+        width: 20%;
+        text-align: center;
+    }
+    .prensaImg p {
+        display: none;
+    }
+
+    .prensaBody button {
+        margin-right: 20px;
+        width: 20vw;
+    }
+
+    /* nosotros.html */
+    .nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .nosotros img {
+        width: 20vw;
+        object-fit: contain;
+    }
+
+    .nosotros div {
+        width: 45vw;
+    }
+
+    .nosotros p {
+        width: 65vw;
+    }
+
+    /* Estilos contacto.html */
+    form fieldset {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+}
+
+@media screen and (min-width: 1207px) {
+    .logoPosition {
+        position: relative;
+        left: 7vw;
+        top: -1rem;
+        height: 0;
+        width: 0;
+    }
+    .logoContainer {
+        background-color: white;
+        border-radius: 2rem;
+        height: 9rem;
+        padding: 22px 18px;
+        text-align: center;
+        width: 8rem;
+        display: flex;
+    }
+
+    header {
+        height: 7.3rem;
+    }
+    .titleContainer h2 {
+        padding-left: 20vw;
+        font-size: 2.3rem;
+    }
+    .containerRight {
+        margin-right: 7vw;
+    }
+    
+    .subTitle h1 {
+        margin-right: 7vw;
+        font-size: 2rem;
+    }
+    .subTitle h3 {
+        font-size: 1.8rem;
+        padding-left: 20vw;
+    }
+    /* .navBar li{
+        font-size: 1.3rem;
+    } */
+
+    main {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    /* PRESENTATION */
+    .presentation h4 {
+        font-size: 3rem;
+    }
+    .presentation iframe {
+        width: 50%;
+        height: 30vw;
+    }
+    .presentation div {
+        width: 50%;
+    }
+    
+    /* ARTICLE */
+    .articleObra {
+        height: 23vw;
+        justify-content: space-between;
+
+    }
+    .articleImg,
+    .articleLogo {
+        height: 100%;
+        width: 24%;
+    }
+    .ordenA { order: 1; }
+    .ordenB { order: 3; }
+    .ordenC { order: 4; }
+    .ordenD { order: 2; }
+    .ordenE { order: 5; }
+
+    .articleObra p,
+    .articleObra div {
+        width: 22%;
+        height: 70%;
+    }
+    .articleObra button {
+        width: 22%;
+    }
+
+    /* producciones.html */
+    .produccionHead,
+    .produccionTag {
+        text-align: left;
+    }
+    .produccion p {
+        width: 100%;
+    }
+    .produccionImg {
+        width: 30%;
+    }
+    .produccionP {
+        width: 70%;
+    }
+    .produccion button {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* galeria.html */
+    .galeriaFotos img {
+        width: 24%;
+        margin-bottom: 1%;
+        height: auto;
+    }
+
+    /* prensa.html */
+    .prensa {
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .prensaTag {
+        padding-left: 10%;
+    }
+
+    .fecha {
+        margin-right: 10%;
+        text-align: right;
+    }
+
+    .prensaBody {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .prensaBody button {
+        margin-right: 20px;
+        width: 25%;
+    }
+    /* Estilos contacto.html */
+    form fieldset {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .socialContainer {
+        margin-left: 20vw;
+    }
+    .navBarMenu {
+        justify-content: flex-end;
+    }
+}
