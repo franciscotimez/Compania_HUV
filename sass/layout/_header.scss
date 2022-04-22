@@ -1,0 +1,156 @@
+// Header 
+header {
+    width: 100vw;
+    height: 5.7rem;
+    margin-bottom: 1.3rem;
+    grid-area: header;
+
+    nav {
+        background-color: $color-principal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+
+        img {
+            height: 2rem;
+        }
+    }
+
+    @include desktop {
+        height: 7.3rem;
+    }
+}
+
+.containerRight {
+    display: flex;
+    @include desktop {
+        margin-right: 7vw;
+    }
+}
+
+.socialContainer,
+.burgerMenu {
+    padding: 0.5rem;
+    align-self: center;
+}
+
+.titleContainer h2 {
+    font-family: fontTitle;
+    font-size: 2rem;
+    padding-left: 7.5rem;
+    align-self: flex-end;
+
+    @include desktop {
+        padding-left: 20vw;
+        font-size: 2.3rem;
+    }
+}
+
+
+.navBar {
+    width: 100vw;
+    color: $color-texto;
+    list-style: none;
+
+    a {
+        color: $color-texto;
+        text-decoration: none;
+        font-weight: 900;
+    }
+}
+
+.navBarMenu {
+    justify-content: flex-end;
+    z-index: 1;
+
+    ul {
+        background-color: $color-principal;
+    }
+}
+
+
+.subTitle {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    height: 50%;
+
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        align-self: center;
+        padding-right: 0.5rem;
+    }
+
+    h3 {
+        font-family: fontTitle;
+        font-size: 1.3rem;
+        padding-left: 7.8rem;
+    }
+
+    @include desktop {
+        h1 {
+            margin-right: 7vw;
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            padding-left: 20vw;
+        }
+    }
+}
+
+
+.logoPosition {
+    position: relative;
+    left: -1.2rem;
+    top: -1rem;
+    height: 0;
+    width: 0;
+    z-index: 2;
+
+    @include desktop {
+        position: relative;
+        left: 7vw;
+        top: -1rem;
+        height: 0;
+        width: 0;
+    }
+}
+
+.logoContainer {
+    background-color: white;
+    border-radius: 0rem 0rem 4rem 0rem;
+    height: 8rem;
+    padding: 24px 20px;
+    text-align: center;
+    width: 8rem;
+
+    img {
+        height: auto;
+        margin: auto;
+        width: 100%;
+    }
+
+    @include desktop {
+        background-color: white;
+        border-radius: 2rem;
+        height: 9rem;
+        padding: 22px 18px;
+        text-align: center;
+        width: 8rem;
+        display: flex;
+    }
+}
+
+// Corrije un bardo con Bootstrap
+@media screen and (min-width: 992px) {
+    .socialContainer {
+        margin-left: 20vw;
+    }
+    .navBarMenu {
+        justify-content: flex-end;
+    }
+}

@@ -60,43 +60,41 @@
             </div>
         </header>
         <main>
-            <div class="formBox">
-                <form action="">
-                    <fieldset>
-                        <legend>Escribinos!!!</legend>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Juan Gabriel">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" placeholder="Perez">
-                        <label for="mail">e-mail</label>
-                        <input type="email" name="mail" placeholder="ejemplo@gmail.com">
-                        <label for="pais">Pais</label>
-                        <select name="pais" id="">
-                            <option value="Argentina">Argentina</option>
-                            <option value="Brasil">Brasil</option>
-                            <option value="Paraguay">Paraguay</option>
-                            <option value="Uruguay">Uruguay</option>
-                        </select>
-                        <label>Genero (que te gustaria interpretar en escenario)</label>
-                        <div class="formRadio">
-                            <input type="radio" name="genero" id="" value="Masculino">
-                            <label for="contactChoice3">Masculino</label>
-                            <input type="radio" name="genero" id="" value="Femenino">
-                            <label for="contactChoice3">Femenino</label>
-                            <input type="radio" name="genero" id="" value="Sin preferencia">
-                            <label for="contactChoice3">Sin preferencia</label>
-                            <input type="radio" name="genero" id="" value="Otro">
-                            <label for="contactChoice3">Otro (aclarar en el mensaje)</label>
-                        </div>
-                        <label for="mensaje">Mensaje (max: 200 caracteres)</label>
-                        <textarea name="mensaje" maxlength="200" rows="6" cols="40" placeholder="Escribi tu mensaje aqui..."></textarea>
-                        <div>
-                            <input class="btn__reset" type="reset" value="Borrar">
-                            <input class="btn__submit" type="submit" value="Enviar Formulario">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+            <form class="contactForm" action="">
+                <fieldset>
+                    <legend>Escribinos!!!</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Juan Gabriel">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Perez">
+                    <label for="mail">e-mail</label>
+                    <input type="email" name="mail" placeholder="ejemplo@gmail.com">
+                    <label for="pais">Pais</label>
+                    <select name="pais" id="">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+                    <label>Genero (que te gustaria interpretar en escenario)</label>
+                    <div class="formRadio">
+                        <input type="radio" name="genero" id="" value="Masculino">
+                        <label for="contactChoice3">Masculino</label>
+                        <input type="radio" name="genero" id="" value="Femenino">
+                        <label for="contactChoice3">Femenino</label>
+                        <input type="radio" name="genero" id="" value="Sin preferencia">
+                        <label for="contactChoice3">Sin preferencia</label>
+                        <input type="radio" name="genero" id="" value="Otro">
+                        <label for="contactChoice3">Otro (aclarar en el mensaje)</label>
+                    </div>
+                    <label for="mensaje">Mensaje (max: 200 caracteres)</label>
+                    <textarea name="mensaje" maxlength="200" rows="6" cols="40" placeholder="Escribi tu mensaje aqui..."></textarea>
+                    <div>
+                        <input class="btn__reset" type="reset" value="Borrar">
+                        <input class="btn__submit" type="submit" value="Enviar Formulario">
+                    </div>
+                </fieldset>
+            </form>
         </main>
         <footer>
             <p>Todos los derechos reservados.</p>

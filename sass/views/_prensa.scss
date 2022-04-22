@@ -1,0 +1,104 @@
+/* Prensa.html */
+.fecha {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    font-weight: 800;
+    text-align: center;
+
+    @include desktop {
+        margin-right: 10%;
+        text-align: right;
+    }
+}
+.prensa {
+    text-align: left;
+
+    h2 {
+        padding: 0 3px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    @include tablet {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    @include desktop {
+        text-align: left;
+        margin-right: 20px;
+    }
+}
+
+
+.prensaText {
+    width: 60vw;
+    @include tablet {
+        width: 80%;
+    }
+}
+
+.prensaImg {
+    width: 40vw;
+    text-align: center;
+
+    img {
+        height: 100px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+    
+    @include tablet {
+        width: 20%;
+        text-align: center;
+
+        p {
+            display: none;
+        }
+    }
+}
+
+.prensaBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    
+    p {
+        text-align: justify;
+        padding: 5px;
+    }
+
+    button {
+        margin-right: 20px;
+        width: 30vw;
+    }
+
+    @include tablet {
+        width: 80vw;
+        margin-left: 10vw;
+        
+        button {
+            margin-right: 20px;
+            width: 20vw;
+        }
+    }
+
+    @include desktop {
+        width: 80%;
+        margin-left: 10%;
+        
+        button {
+            margin-right: 20px;
+            width: 25%;
+        }
+    }
+}
+
+@include desktop {
+    .prensaTag {
+        padding-left: 10%;
+    }
+}

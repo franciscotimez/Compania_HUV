@@ -1,0 +1,107 @@
+/* Estilos contacto.html */
+.contactForm {
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 20px;
+        
+        div {
+            width: 80%;
+        }
+        
+        legend { 
+            font-family: fontTitle;
+            font-size: 2.5rem;
+            padding-left: 3rem;
+        }
+
+        @include tablet {
+            width: 70vw;
+            margin-left: 15vw;
+        }
+        
+        @include desktop {
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+    
+    label {
+        padding: 0.5rem;
+        text-align: left;
+        width: 80%;
+    }
+    
+    input {
+        border: 1px solid $color-secundario;
+        border-radius: 6px;
+        display: block;
+        font-size: 1.1rem;
+        height: 1rem;
+        /* margin: 0px 0px 0px 0rem; */
+        padding: 15px;
+        width: 80%;
+        /* background-color: green; */
+    }
+    
+    select {
+        border: 1px solid $color-secundario;
+        border-radius: 6px;
+        font-family: $fontPrimary;
+        font-size: 1.1rem;
+        height: auto;
+        padding: 3px 3px 3px 15px;
+        width: 80%;
+    }
+    textarea {
+        border: 1px solid $color-secundario;
+        border-radius: 6px;
+        font-family: $fontPrimary;
+        font-size: 1.3rem;
+        margin: 0px;
+        padding: 20px;
+        width: 80%;
+    }
+}
+    
+.formRadio {
+    width: 80%;
+    font-size: 1.1rem;
+}
+.formRadio label {
+    display: inline-block;
+    height: auto;
+    width: 93%
+}
+.formRadio input {
+    display: inline-block;
+    height: 1rem;
+    width: 5%;
+}
+
+
+.btn__reset {
+    background-color: #b3455b;
+    display: inline-block;
+    font-family: $fontPrimary;
+    height: 50px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 31%;
+}
+
+.btn__submit {
+    background-color: $color-principal;
+    display: inline-block;
+    font-family: $fontPrimary;
+    height: 50px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 67%;
+}

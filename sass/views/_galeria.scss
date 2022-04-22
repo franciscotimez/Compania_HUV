@@ -1,0 +1,35 @@
+/* galeria.html */
+.galeria {
+    h4 {
+        text-align: center;
+        font-family: fontTitle;
+        font-size: 2.3rem;
+        margin-bottom: 15px;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    
+        img {
+            width: 49vw;
+            height: 34vw;
+            object-fit: contain;
+
+            @include tablet {
+                width: 32vw;
+                height: auto;
+                margin-bottom: 1vw;
+            }
+
+            @include desktop {
+                width: 24%;
+                margin-bottom: 1%;
+                height: auto;
+            }
+        }
+    }
+}
+

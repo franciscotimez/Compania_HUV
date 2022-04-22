@@ -1,0 +1,11 @@
+/* Footer */
+footer {
+    background-color: $color-principal;
+    grid-area: footer;
+    height: 5rem;
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+}

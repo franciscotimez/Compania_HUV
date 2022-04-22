@@ -1,0 +1,18 @@
+
+/* Main */
+main {
+    grid-area: main;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    
+    section {
+        margin-top: 2px; 
+    }
+
+    @include desktop {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+}
