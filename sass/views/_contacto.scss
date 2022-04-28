@@ -56,6 +56,7 @@
         padding: 3px 3px 3px 15px;
         width: 80%;
     }
+
     textarea {
         border: 1px solid $color-secundario;
         border-radius: 6px;
@@ -65,43 +66,42 @@
         padding: 20px;
         width: 80%;
     }
-}
+
+    .btn__reset {
+        background-color: #b3455b;
+        display: inline-block;
+        font-family: $fontPrimary;
+        height: 50px;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        width: 31%;
+    }
     
-.formRadio {
-    width: 80%;
-    font-size: 1.1rem;
-}
-.formRadio label {
-    display: inline-block;
-    height: auto;
-    width: 93%
-}
-.formRadio input {
-    display: inline-block;
-    height: 1rem;
-    width: 5%;
-}
-
-
-.btn__reset {
-    background-color: #b3455b;
-    display: inline-block;
-    font-family: $fontPrimary;
-    height: 50px;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    width: 31%;
-}
-
-.btn__submit {
-    background-color: $color-principal;
-    display: inline-block;
-    font-family: $fontPrimary;
-    height: 50px;
-    margin: 0;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 67%;
+    .btn__submit {
+        background-color: $color-principal;
+        display: inline-block;
+        font-family: $fontPrimary;
+        height: 50px;
+        margin: 0;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 67%;
+    }
+    
+    .formRadio {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+    .formRadio label {
+        display: inline-block;
+        height: auto;
+        width: 93%
+    }
+    .formRadio input {
+        display: inline-block;
+        height: 1rem;
+        width: 5%;
+    }
 }

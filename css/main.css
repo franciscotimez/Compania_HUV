@@ -339,21 +339,7 @@ h5 {
   padding: 20px;
   width: 80%; }
 
-.formRadio {
-  width: 80%;
-  font-size: 1.1rem; }
-
-.formRadio label {
-  display: inline-block;
-  height: auto;
-  width: 93%; }
-
-.formRadio input {
-  display: inline-block;
-  height: 1rem;
-  width: 5%; }
-
-.btn__reset {
+.contactForm .btn__reset {
   background-color: #b3455b;
   display: inline-block;
   font-family: "Fredoka", sans-serif;
@@ -363,7 +349,7 @@ h5 {
   text-align: center;
   width: 31%; }
 
-.btn__submit {
+.contactForm .btn__submit {
   background-color: #45B39D;
   display: inline-block;
   font-family: "Fredoka", sans-serif;
@@ -373,6 +359,20 @@ h5 {
   padding: 10px;
   text-align: center;
   width: 67%; }
+
+.contactForm .formRadio {
+  width: 80%;
+  font-size: 1.1rem; }
+
+.contactForm .formRadio label {
+  display: inline-block;
+  height: auto;
+  width: 93%; }
+
+.contactForm .formRadio input {
+  display: inline-block;
+  height: 1rem;
+  width: 5%; }
 
 /* galeria.html */
 .galeria h4 {
