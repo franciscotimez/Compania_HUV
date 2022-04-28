@@ -50,6 +50,9 @@
     }
 }
 
-.rigthAling {
-    text-align: right;
+.nosotros-right {
+    @extend .nosotros;
+    div {
+        text-align: right;
+    }
 }

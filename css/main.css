@@ -402,41 +402,41 @@ h5 {
         height: auto; } }
 
 /* nosotros.html */
-.nosotros {
+.nosotros, .nosotros-right {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px; }
-  .nosotros img {
+  .nosotros img, .nosotros-right img {
     width: 30vw;
     object-fit: contain; }
-  .nosotros div {
+  .nosotros div, .nosotros-right div {
     width: 70vw; }
-  .nosotros h4 {
+  .nosotros h4, .nosotros-right h4 {
     font-size: 0.7rem; }
-  .nosotros h5 {
+  .nosotros h5, .nosotros-right h5 {
     padding: 20px 0;
     font-size: 1.3rem;
     text-align: center;
     font-weight: 500;
     font-style: italic; }
-  .nosotros p {
+  .nosotros p, .nosotros-right p {
     text-align: justify;
     padding: 10px; }
   @media screen and (min-width: 768px) {
-    .nosotros {
+    .nosotros, .nosotros-right {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 20px; }
-      .nosotros img {
+      .nosotros img, .nosotros-right img {
         width: 20vw;
         object-fit: contain; }
-      .nosotros div {
+      .nosotros div, .nosotros-right div {
         width: 45vw; }
-      .nosotros p {
+      .nosotros p, .nosotros-right p {
         width: 65vw; } }
 
-.rigthAling {
+.nosotros-right div {
   text-align: right; }
 
 /* Prensa.html */
