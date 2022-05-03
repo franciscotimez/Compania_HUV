@@ -5,6 +5,7 @@
     margin-bottom: 20px;
     img {
         width: 30vw;
+        padding: 0.5rem;
         object-fit: contain;
     }
 
@@ -18,7 +19,7 @@
 
     h5 {
         padding: 20px 0;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
         font-weight: 500;
         font-style: italic;
@@ -34,6 +35,10 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 20px;
+
+        h5 {
+            font-size: 1.8rem;
+        }
         
         img {
             width: 20vw;
@@ -46,6 +51,12 @@
         
         p {
             width: 65vw;
+        }
+    }
+
+    @include desktop {
+        h5 {
+            font-size: 2.1rem;
         }
     }
 }
