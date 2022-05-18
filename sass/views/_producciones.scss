@@ -10,7 +10,7 @@
         margin: 0;
     }
     
-    button {
+    .buttonPrincipal {
         align-self: flex-end;
         margin-right: 5vw;
         width: 35vw;
@@ -26,13 +26,13 @@
             width: 70vw;
         }
         
-        button {
+        .buttonPrincipal {
             width: 20vw;
         }
     }
 
     @include desktop {
-        button {
+        .buttonPrincipal {
             margin: 0;
             margin-bottom: 20px;
         }

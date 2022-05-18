@@ -550,7 +550,7 @@ h5 {
     text-align: justify;
     padding: 0 1rem 1rem 1rem;
     margin: 0; }
-  .produccion button {
+  .produccion .buttonPrincipal {
     align-self: flex-end;
     margin-right: 5vw;
     width: 35vw;
@@ -562,10 +562,10 @@ h5 {
       justify-content: flex-end; }
       .produccion p {
         width: 70vw; }
-      .produccion button {
+      .produccion .buttonPrincipal {
         width: 20vw; } }
   @media screen and (min-width: 1207px) {
-    .produccion button {
+    .produccion .buttonPrincipal {
       margin: 0;
       margin-bottom: 20px; }
     .produccion p {
