@@ -1,0 +1,23 @@
+.buttonPrincipal {
+    display: grid;
+    text-decoration: none;
+    align-items: center;
+    justify-items: center;
+    background-color: $color-principal;
+    border: none;
+    border-radius: 6px;
+    font-family: $fontPrimary;
+    font-size: 1.2rem;
+    height: 3rem;
+    
+    p {
+        color: $color-texto;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &:hover {
+        background-color: lighten($color-principal, 10%)
+    }
+}

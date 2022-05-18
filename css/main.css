@@ -37,25 +37,32 @@ header {
 .titleContainer h2 {
   font-family: fontTitle;
   font-size: 2rem;
-  padding-left: 7.5rem;
+  padding-left: 25vw;
   align-self: flex-end; }
+  @media screen and (min-width: 768px) {
+    .titleContainer h2 {
+      padding-left: 15vw; } }
   @media screen and (min-width: 1207px) {
     .titleContainer h2 {
-      padding-left: 20vw;
+      padding-left: 19vw;
       font-size: 2.3rem; } }
 
 .navBar {
   width: 100vw;
   color: #191919;
   list-style: none; }
-  .navBar a {
+  .navBar li a {
     color: #191919;
     text-decoration: none;
     font-weight: 900; }
+    .navBar li a:hover {
+      color: #191919;
+      background-color: #378e7d; }
 
 .navBarMenu {
   justify-content: flex-end;
-  z-index: 1; }
+  z-index: 1;
+  margin-right: 5vw; }
   .navBarMenu ul {
     background-color: #45B39D; }
 
@@ -68,18 +75,22 @@ header {
     margin: 0;
     font-size: 1.5rem;
     align-self: center;
-    padding-right: 0.5rem; }
+    margin-right: 5vw; }
+    @media screen and (min-width: 1207px) {
+      .subTitle h1 {
+        margin-right: 7vw;
+        font-size: 2rem; } }
   .subTitle h3 {
     font-family: fontTitle;
     font-size: 1.3rem;
-    padding-left: 7.8rem; }
-  @media screen and (min-width: 1207px) {
-    .subTitle h1 {
-      margin-right: 7vw;
-      font-size: 2rem; }
-    .subTitle h3 {
-      font-size: 1.8rem;
-      padding-left: 20vw; } }
+    padding-left: 29vw; }
+    @media screen and (min-width: 768px) {
+      .subTitle h3 {
+        padding-left: 17vw; } }
+    @media screen and (min-width: 1207px) {
+      .subTitle h3 {
+        padding-left: 19.5vw;
+        font-size: 1.8rem; } }
 
 .logoPosition {
   position: relative;
@@ -119,7 +130,7 @@ header {
 
 @media screen and (min-width: 992px) {
   .socialContainer {
-    margin-left: 20vw; }
+    margin-left: 5vw; }
   .navBarMenu {
     justify-content: flex-end; } }
 
@@ -134,8 +145,8 @@ main {
     margin-top: 2px; }
   @media screen and (min-width: 1207px) {
     main {
-      width: 80vw;
-      margin-left: 10vw; } }
+      width: 78vw;
+      margin-left: 11vw; } }
 
 /* Footer */
 footer {
@@ -459,29 +470,32 @@ h5 {
 .prensa {
   text-align: left; }
   .prensa h2 {
+    width: 100%;
     padding: 0 3px;
     text-align: center;
     margin-bottom: 20px; }
   @media screen and (min-width: 768px) {
     .prensa {
-      text-align: right;
-      margin-right: 20px; } }
+      text-align: right; } }
   @media screen and (min-width: 1207px) {
     .prensa {
-      text-align: left;
-      margin-right: 20px; } }
+      text-align: left; } }
 
 .prensaText {
-  width: 60vw; }
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .prensaText {
       width: 80%; } }
+  @media screen and (min-width: 1207px) {
+    .prensaText {
+      width: 75%; } }
 
 .prensaImg {
-  width: 40vw;
+  width: 100%;
   text-align: center; }
   .prensaImg img {
-    height: 100px; }
+    width: 100%;
+    object-fit: cover; }
   .prensaImg p {
     font-size: 0.7rem; }
   @media screen and (min-width: 768px) {
@@ -490,6 +504,9 @@ h5 {
       text-align: center; }
       .prensaImg p {
         display: none; } }
+  @media screen and (min-width: 1207px) {
+    .prensaImg {
+      width: 25%; } }
 
 .prensaBody {
   display: flex;
@@ -499,27 +516,30 @@ h5 {
   .prensaBody p {
     text-align: justify;
     padding: 5px; }
-  .prensaBody button {
+  .prensaBody .buttonPrincipal {
     margin-right: 20px;
     width: 30vw; }
   @media screen and (min-width: 768px) {
     .prensaBody {
       width: 80vw;
       margin-left: 10vw; }
-      .prensaBody button {
+      .prensaBody .buttonPrincipal {
         margin-right: 20px;
         width: 20vw; } }
   @media screen and (min-width: 1207px) {
     .prensaBody {
       width: 80%;
       margin-left: 10%; }
-      .prensaBody button {
+      .prensaBody .buttonPrincipal {
         margin-right: 20px;
         width: 25%; } }
 
 @media screen and (min-width: 1207px) {
   .prensaTag {
-    padding-left: 10%; } }
+    padding-left: 10%; }
+    .prensaTag p {
+      margin: 0;
+      padding: 0; } }
 
 /* producciones.html */
 .produccion {
@@ -561,7 +581,7 @@ h5 {
 
 .produccionTag {
   text-align: center;
-  margin: 0.5rem 0rem; }
+  margin: 0.3rem 0rem; }
   .produccionTag p {
     font-size: 0.8rem;
     background-color: lightgrey;
@@ -598,6 +618,25 @@ h5 {
   .produccionP {
     width: 70%; } }
 
+.buttonPrincipal {
+  display: grid;
+  text-decoration: none;
+  align-items: center;
+  justify-items: center;
+  background-color: #45B39D;
+  border: none;
+  border-radius: 6px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  height: 3rem; }
+  .buttonPrincipal p {
+    color: #191919;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+  .buttonPrincipal:hover {
+    background-color: #67c4b2; }
+
 /* Reset style Browser */
 * {
   box-sizing: border-box;
@@ -614,12 +653,3 @@ body {
 
 ::-webkit-scrollbar {
   display: none; }
-
-button {
-  background-color: #45B39D;
-  display: inline-block;
-  border: none;
-  border-radius: 6px;
-  font-family: "Fredoka", sans-serif;
-  font-size: 1.2rem;
-  height: 3rem; }

@@ -38,11 +38,15 @@ header {
 .titleContainer h2 {
     font-family: fontTitle;
     font-size: 2rem;
-    padding-left: 7.5rem;
+    padding-left: 25vw;
     align-self: flex-end;
+    
+    @include tablet {
+        padding-left: 15vw;
+    }
 
     @include desktop {
-        padding-left: 20vw;
+        padding-left: 19vw;
         font-size: 2.3rem;
     }
 }
@@ -53,16 +57,24 @@ header {
     color: $color-texto;
     list-style: none;
 
-    a {
-        color: $color-texto;
-        text-decoration: none;
-        font-weight: 900;
+    li {
+        a {
+            color: $color-texto;
+            text-decoration: none;
+            font-weight: 900;
+
+            &:hover {
+                color: $color-texto;
+                background-color: darken( $color-principal, 10% );
+            }
+        }
     }
 }
 
 .navBarMenu {
     justify-content: flex-end;
     z-index: 1;
+    margin-right: 5vw;
 
     ul {
         background-color: $color-principal;
@@ -75,31 +87,34 @@ header {
     justify-content: space-between;
     background-color: $color-secundario;
     height: 50%;
-
+    
     h1 {
         margin: 0;
         font-size: 1.5rem;
         align-self: center;
-        padding-right: 0.5rem;
+        margin-right: 5vw;
+        
+        @include desktop {
+            margin-right: 7vw;
+            font-size: 2rem;
+        }
     }
 
     h3 {
         font-family: fontTitle;
         font-size: 1.3rem;
-        padding-left: 7.8rem;
+        padding-left: 29vw;
+        
+        @include tablet {
+            padding-left: 17vw;
+        }
+
+        @include desktop {
+            padding-left: 19.5vw;
+            font-size: 1.8rem;
+        }
     }
 
-    @include desktop {
-        h1 {
-            margin-right: 7vw;
-            font-size: 2rem;
-        }
-        
-        h3 {
-            font-size: 1.8rem;
-            padding-left: 20vw;
-        }
-    }
 }
 
 
@@ -148,7 +163,7 @@ header {
 // Corrije un bardo con Bootstrap
 @media screen and (min-width: 992px) {
     .socialContainer {
-        margin-left: 20vw;
+        margin-left: 5vw;
     }
     .navBarMenu {
         justify-content: flex-end;
