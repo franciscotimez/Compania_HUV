@@ -8,7 +8,7 @@
 
 header {
   width: 100vw;
-  height: 5.7rem;
+  height: 6.5rem;
   margin-bottom: 1.3rem;
   grid-area: header; }
   header nav {
@@ -36,9 +36,10 @@ header {
 
 .titleContainer h2 {
   font-family: fontTitle;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-left: 25vw;
-  align-self: flex-end; }
+  align-self: flex-end;
+  margin: 0; }
   @media screen and (min-width: 768px) {
     .titleContainer h2 {
       padding-left: 15vw; } }
@@ -82,8 +83,9 @@ header {
         font-size: 2rem; } }
   .subTitle h3 {
     font-family: fontTitle;
-    font-size: 1.3rem;
-    padding-left: 29vw; }
+    font-size: 1.4rem;
+    padding-left: 28vw;
+    margin: 0; }
     @media screen and (min-width: 768px) {
       .subTitle h3 {
         padding-left: 17vw; } }
@@ -167,7 +169,7 @@ footer {
   padding: 7px;
   justify-content: center; }
   .presentation h4 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     width: 90%;
     text-align: center;
     font-style: italic;
@@ -179,7 +181,7 @@ footer {
   .presentation div p {
     text-align: justify;
     margin: 0.5rem 0;
-    padding: 0 0.3rem;
+    padding: 0 1rem;
     color: #191919; }
   @media screen and (min-width: 768px) {
     .presentation h4 {
@@ -201,40 +203,42 @@ footer {
       width: 50%; } }
 
 /* ARTICLE */
-h5 {
-  width: 100%;
-  font-family: fontTitle;
-  font-size: 2.3rem;
-  padding: 0.5rem 0rem 0rem 1.5rem; }
-
 .articleObra {
   display: flex;
   flex-wrap: wrap; }
+  .articleObra h5 {
+    width: 100%;
+    font-family: fontTitle;
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 0.5rem 0rem 0rem 1.5rem; }
   .articleObra h6 {
     display: inline-block;
     width: 100%;
     font-family: fontTitle;
     font-size: 2.3rem;
-    padding: 0.5rem 0rem 0rem 1.5rem; }
+    margin: 0;
+    padding: 1rem 0rem 0rem 1rem; }
   .articleObra p {
     display: inline-block;
-    width: 60%;
+    width: 100%;
     text-align: justify;
-    padding: 3px; }
+    padding: 0 1rem;
+    margin: 0; }
   .articleObra div {
     display: inline-block;
-    width: 60%;
+    width: 100%;
     justify-content: space-around; }
     .articleObra div p {
       width: 100%; }
-  .articleObra button {
+  .articleObra .buttonPrincipal {
     margin: 1%;
     width: 48%;
     /* order: 1; */ }
   .articleObra img {
     display: inline-block;
     border-radius: 8px;
-    width: 40%;
+    width: 50%;
     padding: 3px;
     height: 100%;
     align-self: center;
@@ -250,7 +254,7 @@ h5 {
       .articleObra div {
         width: 45%;
         height: 29%; }
-      .articleObra button {
+      .articleObra .buttonPrincipal {
         width: 45%; }
       .articleObra img {
         height: 46%;
@@ -277,7 +281,7 @@ h5 {
       .articleObra div {
         width: 22%;
         height: 70%; }
-      .articleObra button {
+      .articleObra .buttonPrincipal {
         width: 22%; }
       .articleObra img {
         height: 100%;
@@ -292,6 +296,9 @@ h5 {
         order: 2; }
       .articleObra .ordenE {
         order: 5; } }
+
+.sectionProxima {
+  background-color: #f2f2f2; }
 
 /* Estilos contacto.html */
 .contactForm fieldset {
@@ -550,11 +557,13 @@ h5 {
     text-align: justify;
     padding: 0 1rem 1rem 1rem;
     margin: 0; }
-  .produccion .buttonPrincipal {
-    align-self: flex-end;
-    margin-right: 5vw;
-    width: 35vw;
-    margin-bottom: 20px; }
+  .produccion .produccionButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; }
+    .produccion .produccionButtons .buttonPrincipal {
+      width: 45%;
+      margin-bottom: 10px; }
   @media screen and (min-width: 768px) {
     .produccion {
       flex-direction: row;
@@ -648,6 +657,7 @@ h5 {
 body {
   color: #191919;
   font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
   font-weight: 400;
   overflow: auto; }
 

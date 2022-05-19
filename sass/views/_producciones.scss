@@ -9,13 +9,18 @@
         padding: 0 1rem 1rem 1rem;
         margin: 0;
     }
-    
-    .buttonPrincipal {
-        align-self: flex-end;
-        margin-right: 5vw;
-        width: 35vw;
-        margin-bottom: 20px;
+
+    .produccionButtons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        .buttonPrincipal {
+            width: 45%;
+            margin-bottom: 10px;
+        }
     }
+    
     
     @include tablet {
         flex-direction: row;

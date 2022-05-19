@@ -1,7 +1,7 @@
 // Header 
 header {
     width: 100vw;
-    height: 5.7rem;
+    height: 6.5rem;
     margin-bottom: 1.3rem;
     grid-area: header;
 
@@ -37,9 +37,10 @@ header {
 
 .titleContainer h2 {
     font-family: fontTitle;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding-left: 25vw;
     align-self: flex-end;
+    margin: 0;
     
     @include tablet {
         padding-left: 15vw;
@@ -102,8 +103,9 @@ header {
 
     h3 {
         font-family: fontTitle;
-        font-size: 1.3rem;
-        padding-left: 29vw;
+        font-size: 1.4rem;
+        padding-left: 28vw;
+        margin: 0;
         
         @include tablet {
             padding-left: 17vw;
