@@ -58,8 +58,10 @@
     }
 }
 
+section {
+    padding: 7px;
+}
 /* ARTICLE */
-
 .articleObra {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +73,7 @@
         margin: 0;
         padding: 0.5rem 0rem 0rem 1.5rem;
     }
+
     h6 {
         display: inline-block;
         width: 100%;
@@ -79,102 +82,61 @@
         margin: 0;
         padding: 1rem 0rem 0rem 1rem;
     }
-    
+
     p {
-        display: inline-block;
-        width: 100%;
         text-align: justify;
         padding: 0 1rem;
         margin: 0;
     }
-    div {
-        display: inline-block;
+    
+    .obraBotones {
         width: 100%;
+        display: flex;
         justify-content: space-around;
 
-        p {
-            width: 100%;
+        .buttonPrincipal {
+            width: 48%;
         }
-    }
-        
-    .buttonPrincipal {
-        margin: 1%;
-        width: 48%;
-        /* order: 1; */
     }
 
     img {
-        display: inline-block;
         border-radius: 8px;
         width: 50%;
         padding: 3px;
-        height: 100%;
-        align-self: center;
         object-fit: cover;
     }
 
     @include tablet {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: space-around;
-        height: 60vw;
+        img:nth-child(3) {
+            display: none;
+        }
 
-        p,
+        img {
+            width: 35%;
+        }
+
         div {
-            width: 45%;
-            height: 29%;
+            width: 65%;
         }
     
         .buttonPrincipal {
-            width: 45%;
-        }
-
-        img {
-            height: 46%;
-            width: 50%;
             margin: 1%;
-            border-radius: 15px;
         }
-
-        .ordenA { order: 2; }
-        .ordenB { order: 1; }
-        .ordenC { order: 4; }
-        .ordenD { order: 3; }
-        .ordenE { order: 5; }
 
         .imgLogo {
-            object-fit: contain;
+            width: 30%;
+        }
+        .divLogo {
+            width: 70%;
         }
     }
 
-    @include desktop {
-        height: 23vw;
-        justify-content: space-between;
-
-        p,
-        div {
-            width: 22%;
-            height: 70%;
-        }
-        
-        .buttonPrincipal {
-            width: 22%;
-        }
-
-        img {
-            height: 100%;
-            width: 24%;
-        }
-        .ordenA { order: 1; }
-        .ordenB { order: 3; }
-        .ordenC { order: 4; }
-        .ordenD { order: 2; }
-        .ordenE { order: 5; }
-    }
 }
 
-.sectionProxima {
+.sectionBackColor {
     background-color: lighten( $color-secundario, 12%);
+    @include desktop {
+        border-radius: 16px;
+    }
 }
 

@@ -5,7 +5,10 @@ footer {
     height: 5rem;
     display: flex;
     padding: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-around;
+    flex-direction: column;
+
+    p {
+        text-align: center;
+        margin: 0;
+    }
 }
