@@ -1,5 +1,11 @@
 /* producciones.html */
+.produccionSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .produccion { 
+    max-width: 1000px;
     width: 90%;
     margin-left: 5%;
     display: flex;

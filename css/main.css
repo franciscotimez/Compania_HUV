@@ -313,7 +313,9 @@ section {
   font-size: 1.3rem;
   margin: 0px;
   padding: 20px;
-  width: 80%; }
+  width: 80%;
+  min-height: 149px;
+  max-height: 150px; }
 
 .contactForm .btn__reset {
   background-color: #b3455b;
@@ -509,7 +511,13 @@ section {
         width: 25%; } }
 
 /* producciones.html */
+.produccionSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 .produccion {
+  max-width: 1000px;
   width: 90%;
   margin-left: 5%;
   display: flex;
