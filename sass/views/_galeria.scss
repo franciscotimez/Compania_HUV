@@ -25,6 +25,11 @@
             }
 
             @include desktop {
+                transition: transform .1s; /* Animation */
+                &:hover {
+                    transform: scale(1.5);
+                    border: 1rem solid $color-secundario;
+                }
                 width: 24%;
                 margin-bottom: 1%;
                 height: auto;

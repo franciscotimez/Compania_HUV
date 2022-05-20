@@ -1,25 +1,34 @@
 /* nosotros.html */
+.nosotrosSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .nosotros {
     display: flex;
+    
+    max-width: 1000px;
     flex-wrap: wrap;
     margin-bottom: 20px;
     img {
-        width: 30vw;
+        width: 35%;
         padding: 0.5rem;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     div {
-        width: 70vw;
+        width: 65%;
     }
 
     h4 {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     h5 {
+        font-family: fontTitle;
         padding: 20px 0;
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         text-align: center;
         font-weight: 500;
         font-style: italic;
@@ -27,9 +36,9 @@
     
     p {
         text-align: justify;
-        padding: 10px;
+        padding: 10px 20px;
     }
-
+    
     @include tablet {
         display: flex;
         flex-wrap: wrap;
@@ -37,26 +46,27 @@
         margin-bottom: 20px;
 
         h5 {
-            font-size: 1.8rem;
+            font-size: 2.5rem;
         }
         
         img {
-            width: 20vw;
+            width: 20%;
             object-fit: contain;
         }
         
         div {
-            width: 45vw;
+            width: 45%;
         }
         
         p {
-            width: 65vw;
+            width: 65%;
         }
     }
-
+    
     @include desktop {
+        justify-content: flex-start;
         h5 {
-            font-size: 2.1rem;
+            font-size: 2.8rem;
         }
     }
 }
@@ -65,5 +75,8 @@
     @extend .nosotros;
     div {
         text-align: right;
+    }
+    @include desktop {
+        justify-content: flex-end;
     }
 }

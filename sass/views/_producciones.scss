@@ -53,9 +53,6 @@
             width: 28%;
         }
 
-        .produccionButtons {
-            width: 82%;
-        }
     }
 
     @include desktop {
@@ -74,6 +71,7 @@
 
 .produccionTag {
     display: flex;
+    justify-content: center;
     margin: 0.3rem 0rem;
 
     p {

@@ -1,10 +1,10 @@
 /* Prensa.html */
 .fecha {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-left: 10px;
     font-weight: 800;
     text-align: center;
-
+    
     @include desktop {
         margin-right: 10%;
         text-align: right;
@@ -30,43 +30,7 @@
 }
 
 
-.prensaText {
-    width: 100%;
-    @include tablet {
-        width: 80%;
-    }
 
-    @include desktop{
-        width: 75%;
-    }
-}
-
-.prensaImg {
-    width: 100%;
-    text-align: center;
-    
-    img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    p {
-        font-size: 0.7rem;
-    }
-    
-    @include tablet {
-        width: 20%;
-        text-align: center;
-
-        p {
-            display: none;
-        }
-    }
-
-    @include desktop {
-        width: 25%;
-    }
-}
 
 .prensaBody {
     display: flex;
@@ -74,19 +38,46 @@
     justify-content: flex-end;
     margin-bottom: 20px;
     
+    img {
+        width: 100%;
+        object-fit: cover;
+                   
+        @include tablet {
+            width: 50%;
+        }
+        
+        @include desktop {
+            width: 35%;
+        }
+    }
+    
     p {
         text-align: justify;
-        padding: 5px;
+        padding: 5px 40px;
     }
 
     .buttonPrincipal {
-        margin-right: 20px;
         width: 30vw;
     }
 
+    .prensaText {
+        width: 100%;
+        @include tablet {
+            width: 50%;
+        }
+    
+        @include desktop{
+            width: 65%;
+        }
+    }
+    
     @include tablet {
         width: 80vw;
         margin-left: 10vw;
+
+        p {
+            width: 100%;
+        }
         
         .buttonPrincipal {
             margin-right: 20px;
@@ -101,17 +92,6 @@
         .buttonPrincipal {
             margin-right: 20px;
             width: 25%;
-        }
-    }
-}
-
-@include desktop {
-    .prensaTag {
-        padding-left: 10%;
-
-        p {
-            margin: 0;
-            padding: 0;
         }
     }
 }
